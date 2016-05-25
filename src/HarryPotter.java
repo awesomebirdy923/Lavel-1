@@ -27,10 +27,15 @@ System.out.println("casting spell: " + spell);
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+		HarryPotter nonsense = new HarryPotter();
 		// 2. become invisible
+		nonsense.makeInvisible(true);
 		// 3. spy on professor snape
+		nonsense.spyOnSnape();
 		// 4. become visible again
+		nonsense.makeInvisible(false);
 		// 5. cast a “stupefy” spell
+		nonsense.castSpell("stupidfy");
 	}
 
 }

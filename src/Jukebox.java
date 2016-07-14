@@ -27,6 +27,7 @@ public class Jukebox implements Runnable, MouseListener {
 
 	JButton button;
 	JButton button2;
+	JButton button3;
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Jukebox());
 	}
@@ -54,16 +55,20 @@ public class Jukebox implements Runnable, MouseListener {
         	   JPanel panel = new JPanel();
         	   button = new JButton("play Koopa's Road");
         	   button2 = new JButton("play Battle! Garatina");
+        	   button3 = new JButton("play Dark Meta Knight");
        
         	   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         	   button.setPreferredSize(new Dimension(300,300));
         	   button2.setPreferredSize(new Dimension(300,300));
+        	   button3.setPreferredSize(new Dimension(300,300));
         	   panel.add(button);
         	   panel.add(button2);
+        	   panel.add(button3);
         	   frame.add(panel);
         	   frame.setVisible(true);
         	   button.addMouseListener(this);
         	   button2.addMouseListener(this);
+        	   button3.addMouseListener(this);
         	   frame.pack();
           }
 	/* Use this method to add album covers to your Panel. */
@@ -83,6 +88,9 @@ public class Jukebox implements Runnable, MouseListener {
 		}
 		if(buttonPressed == button2){
 			Song song1 = new Song("Battle! Giratina (Pokémon Platinum) - GaMetal.mp3");
+			song1.play();
+		}else{
+			Song song1 = new Song("Dark Meta Knight (Kirby and the Amazing Mirror) - GaMetal.mp3");
 			song1.play();
 		}
 		

@@ -23,7 +23,7 @@ public class AnimalJumping {
 
 		 	String urlOfAnimalSuckingAtJumping = "http://i.imgur.com/Jdt1rRf.gif";
 		 	
-		 	JFrame frame = new JFrame("#DAWGNUKE "+"WAR IS HERE "+"OMG OMG OMG OMG OMG OMG OMG OMG");
+		 	JFrame frame = new JFrame("#DAWGNUKE "+"SAVE DA DAWG "+"OMG OMG OMG OMG OMG OMG OMG OMG");
 		 	JLabel label = createImage(urlOfAnimalSuckingAtJumping);
 		 	frame.setSize(new Dimension(800, 800));
 		 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

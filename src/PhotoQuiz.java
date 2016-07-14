@@ -43,28 +43,51 @@ public class PhotoQuiz {
 
 		quizWindow.pack();
 		
+		int q1 = JOptionPane.showConfirmDialog(null, "Is this meme a troll face?");
 
 		
 		// 6. ask a question that relates to the image
 		
 
-
 		// 7. print "CORRECT" if the user gave the right answer
+		
+		if(q1 == 0){
+			JOptionPane.showMessageDialog(null, "CARREKT!!!@123345");
+		}else{
+			JOptionPane.showMessageDialog(null, "UR WRANG");
+		}
+		
 
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
 
+		quizWindow.remove(img);
+		
 		// 10. find another image and create it (might take more than one line of code)
 
+		Component img2 = createImage("https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg");
+		
 		// 11. add the second image to the quiz window
 
+		quizWindow.add(img2);
+		
 		// 12. pack the quiz window
 
+		quizWindow.pack();
+		
 		// 13. ask another question
 
+		int q2 = JOptionPane.showConfirmDialog(null, "is this meme an mlg?");
+		
 		// 14+ check answer, say if correct or incorrect, etc.
 
+		if(q2 == 1){
+			JOptionPane.showMessageDialog(null, "CARREKT!!!@123345");
+		}else{
+			JOptionPane.showMessageDialog(null, "UR WRANG");
+		}
+		
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {

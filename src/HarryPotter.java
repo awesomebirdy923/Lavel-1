@@ -5,7 +5,7 @@ public class HarryPotter {
 	private boolean cloakOn;
 	
 	HarryPotter() {
-		System.out.println("making Harry Potter...");
+		System.out.println("making Harry Rotter...");
 	}
 
 	void castSpell(String spell){

@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="/Users/league/Google Drive/league-jars/Tortoise.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/Users/league/Google Drive/league-jars/javazoom.jar"/>
+	<classpathentry kind="lib" path="/Users/league/Downloads/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
